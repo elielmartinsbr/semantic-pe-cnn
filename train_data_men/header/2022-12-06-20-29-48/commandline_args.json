@@ -1,0 +1,20 @@
+{
+  "verbose": 1,
+  "rounds": 6,
+  "cnn_kernel": 100,
+  "cnn_stride": 50,
+  "cnn_filter": 128,
+  "cnn_dense": 64,
+  "cnn_decay_steps": 30,
+  "cnn_decay_rate": 1,
+  "batch_size": 32,
+  "dataset_path": "VirusShareSant",
+  "num_samples": 100,
+  "pe_size": 4096,
+  "pe_increment": 0,
+  "pe_part": "header",
+  "pe_balanced": "over",
+  "train_memory": true,
+  "train_generator": false,
+  "train_incremental": false
+}
