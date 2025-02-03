@@ -5,13 +5,7 @@ from tensorflow.keras import Model
 from tensorflow.keras.layers import Input, Dense, Embedding, Conv1D, GlobalMaxPooling1D
 from tensorflow.keras.layers import Dropout, Multiply
 
-def malconv(maxlen=1000,kernel=100,stride=50,filters=128,dense=64):
-    import os
-    import tensorflow as tf
-    from tensorflow.keras import Model
-    from tensorflow.keras.layers import Input, Dense, Embedding, Conv1D, GlobalMaxPooling1D
-    from tensorflow.keras.layers import Dropout, Multiply, SpatialDropout1D
-    from livelossplot import PlotLossesKeras
+def malconv(maxlen=4096,kernel=500,filters=128,dense=64):
 
     embedding_dim=8
     vocab_size=256
